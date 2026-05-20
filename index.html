@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spelling Bees</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    
+
+
+
+
+    <section id="join-screen" class="screen active">
+
+        <div class="title-container">
+
+        <h1>Spelling Bees</h1>
+        </div>
+
+        <div class="normalcontainer">
+        <h1>Join a Game</h1>
+
+        <input id="name-input" type="text" placeholder=" Please Enter Your Name">
+
+        <input id="code-input" type="text" placeholder="Room Code">
+
+        <button id="join-button" type="submit">Join Game</button>
+
+
+        <button id="create-room-button" type="submit">Create A Game</button>
+
+        </div>
+
+
+    </section>
+
+
+    <section id="lobby-screen-teacher" class="screen">
+        <div class="title-container">
+
+        <h1>Room: <span id="room-code"></span></h1>
+        </div>
+
+        <div class="normalcontainer">
+
+        <h2>players</h2>
+
+        <div id="player-list-flex">
+     
+            
+         
+            </div>
+
+
+          
+        </div>
+
+        
+
+            
+        
+
+
+        <button id="start-game" type="submit">Start Game</button>
+        <button id="returnhometeacher" type="submit">return home</button>
+        </div>
+        
+
+</div>
+
+
+    </section>
+
+
+    <section id="lobby-screen-student" class="screen">
+        <div class="title-container">
+        <h1>Room:<span id="room-code"></span></h1>
+        </div>
+
+
+        <h2>players</h2>
+        
+    
+            
+          
+        </div>
+
+        <button id="readyup" type="submit">Ready Up</button>
+
+        
+
+    </section>
+
+
+
+
+    <section id="create-game" class="screen">
+        <div class="titlecontainer">
+        <h1>Create A Game</h1>
+        </div>
+
+        <div class="normalcontainer">
+        <input id="num-of-questions" required type="number" placeholder="number of questions">
+
+    <input id="time-per-question" required type="number" placeholder=" Time per Question (Seconds)">
+    <select id="difficulty" required type="text" placeholder="difficulty">
+
+        <option value="level1">Level 1</option>
+        <option value="level2">Level 2</option>
+        <option value="level3">Level 3</option>
+        </select>
+
+        <select id="audio-select" required type="text" placeholder="difficulty">
+
+        <option value="teacher">Teacher</option>
+        <option value="Student">Students</option>
+        <option value="Both">Both</option>
+        </select>
+
+
+
+    
+
+    <button id="create-game-button" type ="submit">Create Game</button>
+    </div>
+    
+
+
+
+    </section>
+
+
+    <section id="question-screen" class="screen">
+        <div class="title-container">
+            <h1 id="timer"></h1>
+
+        <h1 id="question-num">
+            <span id="current-question">
+                </span>
+                /
+                <span id="qscreen-num-of-questions">
+
+                </span>
+            </h1>
+        </div>
+
+        <div class="normalcontainer">
+        <input id="guess" type="text"  required placeholder="Your Answer">
+
+        <button id="submit-answer" type="submit">Submit Answer</button>
+
+        <button id="play-again" type="button">play again</button>
+        </div>
+    </section>
+
+
+    <section id="leaderboard" class="screen">
+        <div class="title-container">
+        <h1>leaderBoard</h1>
+        </div>
+
+        <div class="normalcontainer">
+
+        <div id="leaderboard-list">
+
+
+        </div>
+        
+        </div>
+        
+    </section>
+
+
+    <section id="results-screen" class="screen">
+        <div class="title-container">
+
+        <h1>Results</h1>
+        </div>
+
+        <div class="long-normalcontainer">
+
+        <div id="top-three">
+            <div id="first-place">
+                <h2>first Place</h2>
+                <H1 id="first-place-name"></H1>
+                <h2 id="first-place-score">
+
+                </h2>
+            </div>
+
+            <div id="second-place">
+                <h2>Second Place</h2>
+                <H1 id="second-place-name"></H1>
+                <h2 id="second-place-score">
+
+                    
+                </h2>
+            </div>
+
+            <div id="third-place">
+                <h2>Third Place</h2>
+                <H1 id="third-place-name"></H1>
+                <h2 id="third-place-score">
+                    
+                </h2>
+            </div>
+            <button id="backtolobby" type="submit">return to lobby</button>
+        </div>
+        </div>
+
+    </section>
+
+
+
+
+    <section id="waitScreen" class="screen">
+
+        <div  class="contianer">
+
+            <h1> waiting for all players to finish</h1>
+
+        </div>
+    </section>
+
+
+    <section id="correct-screen" class="screen">
+        <div class="container">
+            <h1>Correct</h1>
+
+            <h2>well done your score is</h2>
+            <h1 id="scorebox"></h1>
+        </div>
+    </section>
+
+
+    <section id="wrong-screen"class="screen">
+<div class="container">
+
+    <h1>Incorrect</h1>
+    <h2>The Correct way to spell the word was</h2>
+    <h1 id ="wrongbox"></h1>
+
+
+</div>
+
+    </section>
+
+<script src="main.js"></script>
+    
+</body>

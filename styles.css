@@ -1,0 +1,164 @@
+/* hexcodes for colour pallete
+
+#3d348b indigo velvet
+#7678ed medium slate blue
+#f7b801 amber flame
+#f18701 tiger orange
+#f35b04 cayenne red
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&display=swap');
+ body{
+    margin: 0;
+    padding:0;
+    overflow-x: hidden;
+    
+ }
+html{
+    margin: 0;
+    padding:0;
+    overflow-x:hidden;
+
+
+}
+
+ ul{
+    color: #f7b801;
+ }
+h1{
+    font-size:48px;
+    color:#f7b801 ;
+    margin-bottom:20px;
+    font-family: 'baloo 2';
+    font-weight: 700;
+}
+p{
+    font-family: 'baloo 2';
+    font-weight: 500;
+    font-size:18px;
+    color:#f7b801;
+    margin-bottom:20px;
+}
+h2{
+    font-family: 'baloo 2';
+    
+    font-size:36px;
+    color:#f7b801;
+    margin-bottom:20px;
+}
+
+
+.screen{
+    display:none;
+}
+
+.screen.active{
+    display:block;
+}
+
+section{
+    background-size: cover;
+    background-image:url("images/normalbackground.png");
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+margin: 0;
+padding: 0;
+ min-height: 100vh;
+
+    
+}
+
+
+
+
+
+
+#player-list-flex{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+.player-section{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    margin:10px;
+    text-align:center;
+}
+
+.bee-character{
+    width:200px;
+    height:200px;
+    object-fit:contain;
+    border-radius:50%;
+    
+}
+
+
+
+.normalcontainer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+
+
+}
+
+.long-normalcontainer{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+   
+
+}
+ 
+
+button{
+    background-color:#f18701;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    margin:10px;
+    font-size:16px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover{
+    background-color:#f35b04;
+}
+
+
+input{
+    padding:10px;
+    margin:10px;
+    font-size:16px;
+    border-radius:5px;
+    border:2px solid #f7b801;
+}
+
+
+select{
+    padding:10px;
+    margin:10px;
+    font-size:16px;
+    border-radius:5px;
+    border:2px solid #f7b801;
+}
+
+#correct-screen{
+background-image:url("images/correctbackground.png");
+}
+#wrong-screen{
+    background-image:url("images/wrongbackground.png");
+}
+
+
