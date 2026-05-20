@@ -489,7 +489,7 @@ nextQuestion(){
         var img=document.createElement("img");
 
         img.className="bee-character";
-        img.src="/images/bee1new.png";
+        img.src="images/bee1new.png";
         img.alt="bee character image"
 // add there nameunderneath the image
 
